@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background:#dcf2ff;
+  color: #2E77F6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p{
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
+.icon {
+  margin-bottom: 2rem;
+}
+
+i{
+  font-size: 20rem;
+  animation: spinning 5s linear infinite;
+  text-shadow: 1px 1px 15px rgba(51, 51, 51, 0.568);
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(-360deg);
+  }
+}
