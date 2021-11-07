@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Essential Group Health Insurance Brokers | Helping Illinois small business owners get the best coverage at the lowest rates with A+ rated carriers. | 2021 All Rights Reserved. - Created by Alex">
+  <meta name="keywords"
+    content="health, health insurance, health insurance companies, cheap health insurance, medical insurance, dental insurance, life insurance, health care plans, essential group health insurance brokers, healthcare management, Illinois business insurance, life insurance companies, insurance agency, insurance companies near me, Illinois health insurance, insurance broker, usa helth insurance, medicare, workers compensation insurance, business insurance">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,20 +16,257 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <title>EssentialGHIB || Welcome</title>
 </head>
 
-<body>
-  <div class="container">
-    <div class="icon">
-      <i class="fas fa-cog"></i>
-    </div>
-    <h1>WebSite is under construction</h1>
-    <h3>Coming soon !</h3>
-    <p>www.essentialGHIB.com</p>
+<body class="no-overflow">
+  <div class="loader-wrapper">
+    <div class="loader"></div>
   </div>
-  <script src="main.js"></script>
+
+  <nav id="main-nav" class="top">
+    <div class="container flex-container">
+      <div class="logo-light big">
+        <img src="./img/main-logo.png" alt="essentialghib logo">
+      </div>
+      <div class="nav_links">
+        <div class="lines"></div>
+        <div class="nav_links-container">
+          <a href="#home" class="medium home menu-item">Home</a>
+          <a href="#services" class="medium services menu-item">Services</a>
+          <a href="#about" class="medium about menu-item">About</a>
+          <a href="#contact" class="medium contact menu-item">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="h_img">
+      <picture>
+        <source srcset="./img/main-image_desktop.webp" type="image/webp" media="(min-width: 768px)">
+        <source srcset="./img/main-image_mobile.webp" type="image/webp" media="(max-width: 767px)">
+        <source srcset="./img/main-image_mobile.jpg" type="image/jpg" media="(max-width: 767px)">
+        <img src="./img/main-image_desktop.jpg" alt="main-banner image">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="h_content">
+        <h1 class="h_title extra-big">Essential Group Health Insurance Brokers</h1>
+        <p class="h_text1 small">Helping Illinois small business owners get the best coverage at the lowest rates
+          with A+
+          rated carriers.</p>
+        <p class="h_text2 small">Get a free no obligation proposal.</p>
+        <a href="#services" class="btn btn-primary small">Our services</a>
+      </div>
+      <a href="#services" class="widget_down"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="s_title big">Our services</h2>
+      <div class="s_box-container">
+        <a href="service-1.html" class="s_box">
+          <div class="box_icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="box_content">
+            <h3 class="box_title medium">Medical - insurance</h3>
+            <p class="box_desc small">Essential health insurance brokers represent the largest A+ rated health insurance
+              carriers in Illinois. We are not captive to any one insurance carrier, we work with our clients to find
+              ...</p>
+          </div>
+          <div class="btn btn-secondary small">Learn more</div>
+        </a>
+        <a href="service-2.html" class="s_box">
+          <div class="box_icon">
+            <i class="fas fa-plus-square"></i>
+          </div>
+          <div class="box_content">
+            <h3 class="box_title medium">Dental - insurance</h3>
+            <p class="box_desc small">Choosing to add dental insurance to your group policy is seamless with most
+              carriers, we also have standalone carrier options when necessary. With PPO, HMO, and indemnity plans
+              available ...</p>
+          </div>
+          <div class="btn btn-secondary small">Learn more</div>
+        </a>
+        <a href="service-3.html" class="s_box">
+          <div class="box_icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <div class="box_content">
+            <h3 class="box_title medium">AD&D/Life - insurance</h3>
+            <p class="box_desc small">Adding accidental death and dismemberment, which is a policy that pays to a
+              beneficiary when death is caused by an accident, is an affordable way to round out an employee benefit ...
+            </p>
+          </div>
+          <div class="btn btn-secondary small">Learn more</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="middle-contact">
+    <div class="mc_img">
+      <picture>
+        <source srcset="./img/middle-image1_desktop.webp" type="image/webp" media="(min-width: 768px)">
+        <source srcset="./img/middle-image1_mobile.webp" type="image/webp" media="(max-width: 767px)">
+        <source srcset="./img/middle-image1_mobile.jpg" type="image/jpg" media="(max-width: 767px)">
+        <img src="./img/middle-image1_desktop.jpg" alt="middle-section image">
+      </picture>
+    </div>
+    <div class="mc_content">
+      <h2 class="mc_title big">You liked some of our services ?</h2>
+      <a class="btn btn-primary small">Contact us</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="a_container">
+      <div class="a_img">
+        <picture>
+          <source srcset="./img/about-us_desktop.webp" type="image/webp" media="(min-width: 768px)">
+          <source srcset="./img/about-us_mobile.webp" type="image/webp" media="(max-width: 767px)">
+          <source srcset="./img/about-us_mobile.jpg" type="image/jpg" media="(max-width: 767px)">
+          <img src="./img/about-us_desktop.jpg" alt="middle-section image">
+        </picture>
+      </div>
+      <div class="a_content">
+        <h2 class="a_title big">About us</h2>
+        <p class="a_desc1 small">Essential group helth insurance brokers are providing full range of products to cover
+          Your employees helth since 2011. and successfully been helping Illinois business owners obtain the maximum
+          benefits for the best price on the market! The company is leaded by successful licensed broker and founder -
+          owner Sasha Savic. For more information about the company You can fill the contact form, send us an email or
+          just call us via phone and ask whatever You want to know.</p>
+        <p class="a_desc2 small">ECHIB specialize in groups size between 2 and 50 employees with a no pressure, casual
+          approach to explaining plan designs and benefits. All of our services come at NO cost to our clients and we
+          welcome companies staring their first “group” plans.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="middle-logos">
+    <div class="ml_container">
+      <div class="ml_logo-box">
+        <div class="ml_box box1"></div>
+        <div class="ml_box box2"></div>
+      </div>
+      <div class="ml_logo-box">
+        <div class="ml_box box3"></div>
+        <div class="ml_box box4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="c_container">
+        <div class="c_content">
+          <h2 class="c_title big">Contact us</h2>
+          <div class="c_address">
+            <i class="fas fa-map-marker-alt contact"></i>
+            <span class="small">314 N Home Ave <br>
+              Park Ridge, IL. 60068</span>
+          </div>
+          <div class="c_phone">
+            <i class="fas fa-phone contact"></i>
+            <span class="small">312-566-8033</span>
+          </div>
+          <div class="c_mail">
+            <i class="fas fa-envelope contact"></i>
+            <a href="#" class="small">info@essentialghib.com</a>
+          </div>
+          <div class="c_social">
+            <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+            <a href="#"><i class="fab fa-instagram in"></i></a>
+          </div>
+        </div>
+        <form action="#" class="c_form">
+          <input type="text" name="name" id="first_name" placeholder="First Name">
+          <input type="text" name="name" id="last_name" placeholder="Last Name">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="number" name="phone" id="phone" placeholder="Phone Number">
+          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+          <div class="c_btn">
+            <input type="submit" value="Send" class="btn btn-secondary form-btn small">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="f_container">
+        <div class="f_content">
+          <div class="f_box">
+            <div class="f_links">
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="#home" class="medium">Home</a>
+              </div>
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="#services" class="medium">Services</a>
+              </div>
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="#about" class="medium">About</a>
+              </div>
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="#contact" class="medium">Contact</a>
+              </div>
+            </div>
+            <div class="f_services">
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="service-1.html" class="medium">Medical - insurance</a>
+              </div>
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="service-2.html" class="medium">Dental - insurance</a>
+              </div>
+              <div class="f_link">
+                <i class="fas fa-angle-double-right"></i>
+                <a href="service-3.html" class="medium">AD&D/Life - insurance</a>
+              </div>
+            </div>
+          </div>
+          <div class="f_contact">
+            <div class="c_address">
+              <i class="fas fa-map-marker-alt contact"></i>
+              <span class="small">314 N Home Ave <br>
+                Park Ridge, IL. 60068</span>
+            </div>
+            <div class="c_phone">
+              <i class="fas fa-phone contact"></i>
+              <span class="small">312-566-8033</span>
+            </div>
+            <div class="c_mail">
+              <i class="fas fa-envelope contact"></i>
+              <a href="#" class="small">info@essentialghib.com</a>
+            </div>
+            <div class="c_social">
+              <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+              <a href="#"><i class="fab fa-instagram in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal_line"></div>
+      <div class="author">
+        <span class="small cp">&copy; 2021 All Rights Reserved. - Designed & Developed by Alex</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
