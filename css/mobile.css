@@ -258,6 +258,10 @@
     width: 220px;
     height: 55px;
   }
+
+  .widget_down {
+    bottom: 4%;
+  }
 }
 
 @media (max-height: 500px) {
