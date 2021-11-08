@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
       loader.classList.add('disabled');
     }, 1000);
     body.classList.remove('no-overflow');
-  }, 3500);
+  }, 1300);
 });
 
 // Navbar effect

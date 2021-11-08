@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 1250px) {
+  #main-nav .flex-container {
+    padding: 0 15px;
+  }
+
   .ml_logo-box {
     flex-direction: column;
     margin-left: 50px;
@@ -74,6 +78,10 @@
 }
 
 @media (max-width: 1100px) {
+  .nav_phone {
+    display: none;
+  }
+
   .a_container {
     flex-direction: column-reverse;
   }
@@ -248,6 +256,7 @@
 @media (max-width: 450px) {
   .logo-light img{
     width: 220px;
+    height: 55px;
   }
 }
 

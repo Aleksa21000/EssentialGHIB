@@ -93,6 +93,11 @@
   font-style: normal;
   font-weight: 500;
 }
+.medium-small {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
 .medium {
   font-size: 22px;
   font-style: normal;
@@ -112,6 +117,11 @@
 
 .logo-light {
   padding-top: 10px;
+}
+
+.logo-light img {
+  width: 300px;
+  height: 67px;
 }
 
 .author {
@@ -138,8 +148,12 @@
   position: relative;
   color: var(--primary-color);
   font-weight: 700;
-  margin-left: 1.5rem;
+  margin-left: 25px;
   padding: 5px;
+}
+
+.nav_links a:first-child {
+  margin-left: 0;
 }
 
 .nav_links a::before {
@@ -178,15 +192,14 @@
   position: absolute;
   bottom: 10%;
   left: calc(50% - 18px);
-  font-size: 20px;
   color: var(--light-color);
   border: 1px solid var(--light-color);
-  padding: 8px;
+  padding: 8px 5px 4px 5px;
   border-radius: 50px;
   overflow: hidden;
 }
 
-.widget_down:hover i {
+.widget_down:hover svg {
   animation: bounce 1s linear infinite;
 }
 

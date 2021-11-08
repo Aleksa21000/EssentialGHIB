@@ -15,6 +15,7 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-display: swap;
   overflow-x: hidden;
 }
 
@@ -34,10 +35,21 @@ body.no-overflow {
   transition: transform 1s;
 }
 
+.nav_phone {
+  position: relative;
+  left: 40px;
+  color: var(--primary-color);
+}
+
+.phone_single {
+  left: -120px;
+}
+
 #main-nav .flex-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 /* Home */
@@ -141,10 +153,10 @@ body.no-overflow {
   margin-left: 0;
 }
 
-.box_icon i {
-  font-size: 45px;
-  font-weight: 300;
-  color: var(--primary-color);
+.box_icon svg {
+  width:55px;
+  height:55px;
+  fill: var(--primary-color);
 }
 
 .box_title {
@@ -389,46 +401,60 @@ body.no-overflow {
   color: var(--primary-color);
 }
 
-.c_address i {
+.c_address svg {
   margin-right: 18px;
-  font-size: 25px;
-  font-weight: 100;
-  color: var(--primary-color);
+  width: 35px;
+  height: 35px;
+  fill: var(--primary-color);
 }
 
-.c_phone i, .c_mail i{
-  margin-right: 15px;
-  font-size: 25px;
-  font-weight: 100;
-  color: var(--primary-color);
+.c_phone svg, .c_mail svg{
+  margin: 0 18px 0 5px;
+  width: 30px;
+  height: 30px;
+  fill: var(--primary-color);
+}
+
+.c_phone svg path {
+  fill: var(--primary-color);
 }
 
 .c_social {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
+  margin-left: 3px;
 }
 
 .c_social .fb,
-.c_social .in{
+.c_social .in path{
   font-size: 30px;
-  transition: 0.5s color;
-  will-change: color;
+  transition: 0.5s fill;
+  will-change: fill;
 }
 
 .c_social .fb:hover,
-.c_social .in:hover {
-  color: var(--dark-color);
+.c_social .in:hover path{
+  fill: var(--dark-color);
+}
+
+.c_social .fb-light:hover,
+.c_social .in-light:hover path{
+  fill: var(--light-color);
 }
 
 .c_social .fb {
-  color: var(--primary-color);
-  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  fill: var(--primary-color);
 }
 
-.c_social .in {
-  color: #c0007a;
+.c_social .in svg{
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  fill: #dd2a7b;
 }
 
 /* Contact form */
@@ -543,7 +569,7 @@ textarea:focus {
   padding-bottom: 15px;
 }
 
-.f_link i {
+.f_link svg {
   margin-right: 15px;
 }
 
