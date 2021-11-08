@@ -463,6 +463,7 @@ body.no-overflow {
   grid-template-areas:
   "fname lname"
   "email phone"
+  "cname cname"
   "message message";
   grid-gap: 10px;
 }
@@ -521,6 +522,13 @@ textarea:focus {
   padding: 1rem 2.5rem;
   -moz-appearance: textfield;
   width: 300px;
+  border-radius: 5px;
+  border: 1px solid var(--dark-color);
+}
+#company-name {
+  grid-area: cname;
+  padding: 1rem 2.5rem;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid var(--dark-color);
 }
