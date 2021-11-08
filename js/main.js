@@ -85,9 +85,14 @@ lines.addEventListener('click', function () {
 
 items.forEach(function (item) {
   item.addEventListener('click', function () {
-    navLinks.classList.remove('active');
-    navLinksContainer.style.opacity = "0";
-    body.style.overflowY = "scroll";
+    if (navLinks.classList.contains('mobile')) {
+      navLinks.classList.remove('active');
+      navLinksContainer.style.opacity = "0";
+      body.style.overflowY = "scroll";
+    } else {
+      navLinksContainer.style.opacity = "1";
+    }
+
   });
 });
 
