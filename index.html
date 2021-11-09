@@ -419,12 +419,19 @@
               </svg></a>
           </div>
         </div>
-        <form name="contact" method="POST" data-netlify="true" class="c_form">
-          <input type="text" name="name" id="first_name" placeholder="First Name">
-          <input type="text" name="name" id="last_name" placeholder="Last Name">
-          <input type="email" name="email" id="email" placeholder="Email">
-          <input type="number" name="phone" id="phone" placeholder="Phone Number">
-          <input type="text" name="company name" id="company-name" placeholder="compnay-name">
+        <form name="contact" action="https://formsubmit.co/radulovicaleksa21@gmail.com" method="POST" class="c_form">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- succes -->
+          <input type="hidden" name="_next" value="https://www.essentialghib.com/success.html">
+          <!-- Form -->
+          <input type="text" name="first name" id="first_name" placeholder="First Name" required>
+          <input type="text" name="last name" id="last_name" placeholder="Last Name" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+          <input type="text" name="company name" id="company-name" placeholder="compnay-name" required>
           <textarea name="message" id="message" placeholder="Enter Message"></textarea>
           <div class="c_btn">
             <input type="submit" value="Send" class="btn btn-secondary form-btn small">

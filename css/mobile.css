@@ -107,6 +107,11 @@
     padding: 1rem 30px;
   }
 
+  #message,
+  #company-name {
+    padding: 1rem 30px;
+  }
+
   .f_box {
     display: flex;
     justify-content: space-between;

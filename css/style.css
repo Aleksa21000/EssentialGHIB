@@ -689,3 +689,25 @@ textarea:focus {
 .box_content .f_link a:hover {
   color: var(--primary-color);
 }
+
+/* Success page */
+.success_img svg{
+  width: 150px;
+  height: 150px;
+  fill: var(--primary-color);
+}
+
+.success_title,
+.success_text {
+  padding: 20px;
+  text-align: center;
+}
+
+.success_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
